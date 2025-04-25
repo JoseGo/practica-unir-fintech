@@ -1,2 +1,5 @@
-# practica-unir-fintech
-Actividad 01- Entornos Integración y Entrega Continua
+# Repo para EIEC - DevOps - UNIR
+
+Este repositorio nos servirá para demostrar el uso de Git en la asignatura de EIEC y muchas cosas mas.
+
+
