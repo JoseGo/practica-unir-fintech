@@ -12,7 +12,7 @@ def sort_list(items, ascending=True):
     if not isinstance(items, list):
         raise RuntimeError(f"No puede ordenar {type(items)}")
 
-    return sorted(items, reverse=(not ascending), nuevo)
+    return sorted(items, reverse=not ascending)
 
 if __name__ == "__main__":
     filename = DEFAULT_FILENAME
@@ -26,7 +26,6 @@ if __name__ == "__main__":
     file_path = os.path.join(".", filename)
     if os.path.isfile(file_path):
         word_list = []
-        word_list = [33]
         with open(file_path, "r") as file:
             for line in file:
                 word_list.append(line.strip())
