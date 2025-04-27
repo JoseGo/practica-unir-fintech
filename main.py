@@ -22,10 +22,10 @@ if __name__ == "__main__":
     if len(sys.argv) == 2:
         filename = sys.argv[1]
     else:
-        print("Se debe indicar el fichero como primer argumento")
+        print("You must provide the filename as the first argument")
         sys.exit(1)
 
-    print(f"Se leerán las palabras del fichero {filename}")
+    print(f"Reading words from file {filename}")
     file_path = os.path.join(".", filename)
     if os.path.isfile(file_path):
         word_list = []
@@ -33,7 +33,7 @@ if __name__ == "__main__":
             for line in file:
                 word_list.append(line.strip())
     else:
-        print(f"El fichero {filename} no existe")
+        print(f"The file {filename} does not exist")
         word_list = ["ravenclaw", "gryffindor", "slytherin", "hufflepuff"]
 
     if remove_duplicates:

@@ -6,3 +6,4 @@ Este repositorio nos servirá para demostrar el uso de Git en la asignatura de E
 Integrantes:
 Jose Alexander Guamani Oña
 Jonathan Alejandro Torres Lopez
+Luis Alfredo Bowen Moreno
