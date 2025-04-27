@@ -14,6 +14,9 @@ def sort_list(items, ascending=True):
 
     return sorted(items, reverse=not ascending)
 
+def remove_duplicates(items):
+    return list(set(items))
+
 if __name__ == "__main__":
     filename = DEFAULT_FILENAME
     if len(sys.argv) == 2:
@@ -32,6 +35,9 @@ if __name__ == "__main__":
     else:
         print(f"El fichero {filename} no existe")
         word_list = ["ravenclaw", "gryffindor", "slytherin", "hufflepuff"]
+
+    if remove_duplicates:
+        word_list = remove_duplicates(word_list)
 
     print(sort_list(word_list))
 
