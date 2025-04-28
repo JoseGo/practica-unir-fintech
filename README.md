@@ -7,3 +7,4 @@ Integrantes:
 Jose Alexander Guamani Oña
 Jonathan Alejandro Torres Lopez
 Luis Alfredo Bowen Moreno
+Cristian Stalin Pilapanta Morales
