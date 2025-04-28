@@ -8,6 +8,17 @@ import sys
 
 DEFAULT_FILENAME = "words.txt"
 
+def imprimir_mayusculas_desde_archivo(nombre_archivo):  
+  try:
+    with open(nombre_archivo, 'r') as archivo:
+      for linea in archivo:
+        palabra = linea.strip()  # Elimina espacios en blanco al principio y al final
+        print(palabra.upper())
+  except FileNotFoundError:
+    print(f"Error: El archivo '{nombre_archivo}' no fue encontrado.")
+  except Exception as e:
+    print(f"Ocurrió un error al leer el archivo: {e}")
+
 def sort_list(items, ascending=True):
     if not isinstance(items, list):
         raise RuntimeError(f"No puede ordenar {type(items)}")
@@ -38,6 +49,8 @@ if __name__ == "__main__":
 
     if remove_duplicates:
         word_list = remove_duplicates(word_list)
+
+    imprimir_mayusculas_desde_archivo("words.txt")
 
     print(sort_list(word_list))
 
